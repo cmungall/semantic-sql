@@ -63,6 +63,27 @@ ontologies:
     build_command: "robot relax -i $< merge -o $@"
     prefixmap:
       loinc: https://loinc.org/
+  # See https://github.com/obophenotype/uberon/issues/3267
+  hba:
+    url: https://github.com/brain-bican/human_brain_atlas_ontology/raw/main/hbao-base.owl
+    prefixmap:
+      HBA: https://purl.brain-bican.org/ontology/hbao/HBA_
+  mba:
+    url: https://github.com/brain-bican/mouse_brain_atlas_ontology/raw/main/mbao-base.owl
+    prefixmap:
+      MBA: https://purl.brain-bican.org/ontology/mbao/MBA_
+  dmba:
+    url: https://github.com/brain-bican/developing_mouse_brain_atlas_ontology/raw/main/dmbao-base.owl
+    prefixmap:
+      DMBA: https://purl.brain-bican.org/ontology/dmbao/DMBA_
+  dhba:
+    url: https://github.com/brain-bican/developing_human_brain_atlas_ontology/raw/main/dhbao-base.owl
+    prefixmap:
+      DHBA: https://purl.brain-bican.org/ontology/dhbao/DHBA_
+  pba:
+    url: https://github.com/brain-bican/primate_brain_atlas_ontology/raw/main/pbao-base.owl
+    prefixmap:
+      PBA: https://purl.brain-bican.org/ontology/pbao/PBA_
   bero:
     url: https://github.com/berkeleybop/bero/releases/download/2022-05-26/bero.owl
   aio:

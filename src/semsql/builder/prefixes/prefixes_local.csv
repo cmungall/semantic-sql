@@ -6,6 +6,11 @@ modl,https://archive.org/services/purl/purl/modular_ontology_design_library#
 biolink,https://w3id.org/biolink/vocab/
 biolink,https://w3id.org/biolink/vocab/
 loinc,https://loinc.org/
+HBA,https://purl.brain-bican.org/ontology/hbao/HBA_
+MBA,https://purl.brain-bican.org/ontology/mbao/MBA_
+DMBA,https://purl.brain-bican.org/ontology/dmbao/DMBA_
+DHBA,https://purl.brain-bican.org/ontology/dhbao/DHBA_
+PBA,https://purl.brain-bican.org/ontology/pbao/PBA_
 BCIO,http://humanbehaviourchange.org/ontology/BCIO_
 BCIOR,http://humanbehaviourchange.org/ontology/BCIOR_
 icd10who,https://icd.who.int/browse10/2019/en#/
