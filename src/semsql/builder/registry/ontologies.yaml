@@ -5,6 +5,22 @@ ontologies:
   upheno:
     url: http://purl.obolibrary.org/obo/upheno.owl
     build_command: "robot merge -i $<  -o $@"
+  swo:
+    url: http://purl.obolibrary.org/obo/swo.owl
+    build_command: "robot merge -i $<  -o $@"
+    # runoak -i sqlite:obo:swo
+    prefixmap:
+      SWO: http://www.ebi.ac.uk/swo/SWO_
+      SWO.organization:  http://www.ebi.ac.uk/swo/organization/SWO_
+      SWO.maturity:  http://www.ebi.ac.uk/swo/maturity/SWO_
+      SWO.objective:  http://www.ebi.ac.uk/swo/objective/SWO_
+      SWO.license:  http://www.ebi.ac.uk/swo/license/SWO_
+      SWO.version:  http://www.ebi.ac.uk/swo/version/SWO_
+      SWO.data:  http://www.ebi.ac.uk/swo/data/SWO_
+      SWO.interface:  http://www.ebi.ac.uk/swo/interface/SWO_
+      SWO.algorithm:  http://www.ebi.ac.uk/swo/algorithm/SWO_
+      OntoDM: http://www.ontodm.com/OntoDM-core/OntoDM_
+      OntoDM.kdd: "http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD"
   chiro:
     url: http://purl.obolibrary.org/obo/chiro.owl
     build_command: "robot relax -i $< merge -o $@"

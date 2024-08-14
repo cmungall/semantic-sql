@@ -9,6 +9,17 @@ db/upheno.owl: download/upheno.owl
 	robot merge -i $<  -o $@
 
 
+download/swo.owl: STAMP
+	curl -L -s http://purl.obolibrary.org/obo/swo.owl > $@.tmp
+	sha256sum -b $@.tmp > $@.sha256
+	mv $@.tmp $@
+
+.PRECIOUS: download/swo.owl
+
+db/swo.owl: download/swo.owl
+	robot merge -i $<  -o $@
+
+
 download/chiro.owl: STAMP
 	curl -L -s http://purl.obolibrary.org/obo/chiro.owl > $@.tmp
 	sha256sum -b $@.tmp > $@.sha256
@@ -1086,4 +1097,4 @@ download/%.owl: STAMP
 db/%.owl: download/%.owl
 	robot merge -i $< -o $@
 
-EXTRA_ONTOLOGIES = upheno chiro ncit fma maxo foodon chebiplus msio modl phenio phenio_test comploinc bero aio reacto bcio icd10who ordo gard mondo-ingest oeo taxslim goldterms sdgio kin biovoices omop comet cco occo iof upa go go-lego go-amigo neo bao orcid cpont biolink biopax enanomapper mlo ito cso obiws reactome-hs reactome-mm efo hcao hpinternational edam chr sweetAll lov schema-dot-org prov dtype vaem qudtunit quantitykind cellosaurus cosmo fhkb dbpendiaont uberoncm icd10cm co_324 ppeo interpro hgnc.genegroup hgnc sgd dictybase eccode uniprot rhea swisslipid drugbank drugcentral complexportal wikipathways drugmechdb rxnorm vccf ontobiotope nando ecso enigma_context ontie ecosim nmdc_schema mixs fibo bfo2020 bfo2020_core bfo2020_notime bfo2020_time
+EXTRA_ONTOLOGIES = upheno swo chiro ncit fma maxo foodon chebiplus msio modl phenio phenio_test comploinc bero aio reacto bcio icd10who ordo gard mondo-ingest oeo taxslim goldterms sdgio kin biovoices omop comet cco occo iof upa go go-lego go-amigo neo bao orcid cpont biolink biopax enanomapper mlo ito cso obiws reactome-hs reactome-mm efo hcao hpinternational edam chr sweetAll lov schema-dot-org prov dtype vaem qudtunit quantitykind cellosaurus cosmo fhkb dbpendiaont uberoncm icd10cm co_324 ppeo interpro hgnc.genegroup hgnc sgd dictybase eccode uniprot rhea swisslipid drugbank drugcentral complexportal wikipathways drugmechdb rxnorm vccf ontobiotope nando ecso enigma_context ontie ecosim nmdc_schema mixs fibo bfo2020 bfo2020_core bfo2020_notime bfo2020_time

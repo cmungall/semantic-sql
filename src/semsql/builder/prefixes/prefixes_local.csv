@@ -1,4 +1,15 @@
 prefix,base
+SWO,http://www.ebi.ac.uk/swo/SWO_
+SWO.organization,http://www.ebi.ac.uk/swo/organization/SWO_
+SWO.maturity,http://www.ebi.ac.uk/swo/maturity/SWO_
+SWO.objective,http://www.ebi.ac.uk/swo/objective/SWO_
+SWO.license,http://www.ebi.ac.uk/swo/license/SWO_
+SWO.version,http://www.ebi.ac.uk/swo/version/SWO_
+SWO.data,http://www.ebi.ac.uk/swo/data/SWO_
+SWO.interface,http://www.ebi.ac.uk/swo/interface/SWO_
+SWO.algorithm,http://www.ebi.ac.uk/swo/algorithm/SWO_
+OntoDM,http://www.ontodm.com/OntoDM-core/OntoDM_
+OntoDM.kdd,http://kt.ijs.si/panovp/OntoDM#OntoDM-KDD
 FMA,http://purl.org/sig/ont/fma/fma
 MSIO,http://purl.obolibrary.org/obo/MSIO_
 nmrCV,http://nmrML.org/nmrCV#NMR:
@@ -42,6 +53,7 @@ voag,http://voag.linkedmodel.org/voag#
 vaem,http://www.linkedmodel.org/schema/vaem#
 qudtschema,http://qudt.org/schema/qudt/
 qudtunit,http://qudt.org/vocab/unit/
+si-quantity,https://si-digital-framework.org/SI/quantities/
 quantitykind,http://qudt.org/vocab/quantitykind/
 cellosaurus,http://purl.obolibrary.org/obo/Cellosaurus#CVCL_
 fhkb,http://owl.cs.manchester.ac.uk/tutorials/fhkb#
