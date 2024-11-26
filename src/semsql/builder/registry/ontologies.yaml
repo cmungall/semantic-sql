@@ -78,6 +78,10 @@ ontologies:
     url: https://github.com/monarch-initiative/mondo-ingest/releases/latest/download/icd10who.owl
     prefixmap:
       icd10who: https://icd.who.int/browse10/2019/en#/
+  omim:
+    url: https://github.com/monarch-initiative/mondo-ingest/releases/latest/download/omim.owl
+    prefixmap:
+      icd10who: https://icd.who.int/browse10/2019/en#/
   #icd11f:
   #  url: https://github.com/monarch-initiative/icd11/releases/latest/download/icd11foundation.owl
   #  prefixmap:
@@ -385,6 +389,8 @@ ontologies:
       RXNORM: http://purl.bioontology.org/ontology/RXNORM/
   vccf:
     url: https://raw.githubusercontent.com/obophenotype/vccf-ontology/main/vccf.owl
+    prefixmap:
+      VCCF: http://purl.obolibrary.org/obo/VCCF_
   ontobiotope:
     url: "'https://data.agroportal.lirmm.fr/ontologies/ONTOBIOTOPE/download?apikey=1de0a270-29c5-4dda-b043-7c3580628cd5&download_format=rdf'"
     prefixmap:
